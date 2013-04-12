@@ -1,0 +1,98 @@
+.slideshow{
+  width:100%;
+  display:block; 
+  position: relative; 
+  .slideshow__control-nav {
+    width: 100%; 
+    text-align: center;
+  }
+  .slideshow__control-nav li {
+    text-align: center;
+    margin:0 3px; display: 
+    inline-block; zoom: 1; 
+    *display: inline;
+  }
+  .slideshow__control-paging li a {
+    width: 3px; 
+    height: 3px; 
+    display: block; 
+    background: #fff; 
+    background: rgba(255,255,255,1); 
+    cursor: pointer; 
+    text-indent: -9999px; 
+    border-radius: 3px;
+    position: relative;
+    top:-1px;
+    text-align: center;
+  }
+  .slideshow__control-paging li a.slideshow__active { 
+    width: 6px; 
+    height: 6px;
+    border-radius: 6px; 
+    top:0px;
+    cursor: default; 
+  }
+}
+
+.slideshow_welcome {
+  @extend .slideshow;
+  @extend .bg_1;
+  height: 100%;
+  .slideshow__viewport{
+    height:100%;
+  }
+  .slideshow__slides{
+    height:100%;
+  }
+  .slideshow__slide{
+    color:#ffffff;
+    position: relative;
+    height:100%;
+  }
+  .slideshow__slide-content{
+    position:absolute;
+    width: 100%; 
+    text-align: center;
+    bottom:40px;
+    padding: 11px;
+  }
+  .slideshow__direction-nav {display:none;}  
+  .slideshow__control-nav {
+    top: -39px;
+    position: relative;
+  }
+  .slideshow__slide-1{
+    //background:url(/assets/welcome-slide-1.png);
+    @include respond-to(retina-display){
+      background:url(/assets/welcome-slide-1.png);
+      background-size: 320px 568px;
+    }
+  }
+  .slideshow__slide-2 {
+    background:url(/assets/welcome-slide-2.png);
+    @include respond-to(retina-display){
+      background:url(/assets/welcome-slide-2.png);
+      background-size: 320px 568px;
+    }
+  }
+  .slideshow__slide-3 {
+    background:url(/assets/welcome-slide-3.png);
+    @include respond-to(retina-display){
+      background:url(/assets/welcome-slide-3.png);
+      background-size: 320px 568px;
+    }
+  }
+  
+}
+
+.slideshow_signup{
+  @extend .slideshow;
+  .slideshow__slide{
+    height:470px;
+    .box__header{text-align: center;}
+  }  
+  .slideshow__slide-content{
+  }
+  .slideshow__direction-nav {display:none;}  
+  .slideshow__control-nav {display:none;}
+}

@@ -1,0 +1,37 @@
+// baseline grid
+$font-size: 16; //in pixels
+$em: 1em;
+
+
+// vertical rhythm in pixels (returns pixels)
+$base: 11  ; // vertical space unit
+$space_0_5x: ($base/2) * 1px;
+$space: $base*1px;
+$space_1_5x: ($base * 1.5) * 1px;
+$space_2x: ($base * 2) * 1px;
+$space_3x: ($base * 3) * 1px;
+$space_4x: ($base * 4) * 1px;
+
+
+// layout grid
+$grid-columns: 8;
+$grid-column-width: (100% / $grid-columns);
+$grid-gutter: 6px;
+$grid-container-shim: 4px;
+
+
+// icon sprite positions
+$image-directory: '/assets/';
+$icon: -4px;
+$icon_white: -25px;
+$icon_black:-46px;
+$icon_white: -67px; 
+$icon_transparent: -88px;
+$icon_transparent:-109px;
+$icon_special:-130px;
+$icon_special2:-151px;
+$icon_special3:-172px;
+
+//colors
+$background-color:#dbeffd;
+

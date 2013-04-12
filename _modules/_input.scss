@@ -1,0 +1,81 @@
+.input_text, .input_textarea {;
+  width: 100%;
+  padding: 0 0 0 7px;
+  margin: 0;
+  border: none;
+  color: #333;
+  background-color: #ffffff;
+  -webkit-appearance: none;
+  resize: none;
+  outline: 0;
+  border-radius: 4px;
+  height:44px;
+  line-height: 44px;
+}
+
+.input_text_blank, .input_text_blank:focus {
+  -webkit-appearance: none;
+  border: none;
+  outline: none;
+  height: 30px;
+}
+
+
+.input_textarea {padding: 7px; line-height: 1.5em;}
+.input_text:hover,.input_textarea:hover {border-color: #999;}
+.input_text:focus,.input_textarea:focus {
+  color: #000; 
+  -webkit-appearance: none;
+  resize: none;
+  outline: 0;
+  background-color: #fff;
+  border-color: #ff8e50;
+}
+
+
+
+.input_textarea_full{
+  //background-color: #fff;
+  border: none;
+  border-radius: 0;
+  height:300px;
+  &:focus {}
+}
+
+.input_textarea_grow {
+  height: auto;
+}
+
+.input_textarea_full-height {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%
+}
+.input_textarea_full-height-navbar {
+  position: fixed;
+  top: 44px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%
+}
+
+// multiple inputs stacked on top of each other
+.input-stack{
+  .input_text{border-radius:0px;margin-bottom:2px;}
+  .input_text:first-child{border-radius:4px 4px 0 0;}
+  .input_text:last-child{border-radius:0 0 4px 4px;margin-bottom:0;}
+}
+
+
+input::-webkit-input-placeholder, 
+textarea::-webkit-input-placeholder,
+input::-moz-placeholder, 
+textarea::-moz-placeholder, input::-input-placeholder, 
+textarea::input-placeholder {
+  color: rgba(0,0,0,.3);
+  // font-weight: bold;
+}

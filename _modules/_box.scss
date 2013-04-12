@@ -1,0 +1,34 @@
+/*
+Box (.box) Good for modules that have a header and body and possibly footer
+*/
+
+
+.box {
+  @extend .block;
+  @extend .clearfix;
+  width:100%;
+	background: #fff;
+}
+.box__header{padding:$space $space 0;}
+.box__body{padding:$space;@extend .clearfix;}
+.box__footer{
+  padding:$space;
+  @extend .bg_7;
+  @extend .clearfix;
+}
+
+.box_rounded {
+  border-radius: 4px;
+  .box__header{border-radius: 4px 4px 0 0;}
+  .box__footer{border-radius: 0 0 4px 4px;}
+}
+
+.box_green{
+  height: 470px;
+  @extend .bg_3;
+  @extend .box_rounded;
+}
+.box_transparent {
+  background: transparent;
+  color: #3e3c39;
+}
