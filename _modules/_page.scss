@@ -1,0 +1,41 @@
+// page
+
+.page {}
+
+.page-wrapper {
+  width: $page-wrapper-width; 
+  margin: 0 auto; 
+  @include clearfix;
+}
+
+.page-body{
+  @include clearfix;
+}
+
+.page-sidebar{
+  float:left;
+  width: 25%;
+}
+
+.page-main{
+  @include clearfix;
+  display:table-cell;
+  *display:block;
+  width:auto;
+  @include box-sizing(border-box);
+}
+
+.page-main:after{clear:both;display:block;visibility:hidden;overflow:hidden;height:0 !important;line-height:0;font-size:xx-large;content:" x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x ";}
+
+
+// custom css
+.page-header{
+  height: 100px;
+}
+.page-sidebar{
+  width: 16%;
+}
+
+.page-logo img{
+  width:100%;
+}

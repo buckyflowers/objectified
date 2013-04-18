@@ -1,19 +1,23 @@
+// type
+$font-family: "ff-tisa-web-pro",Georgia,Cambria,"Times New Roman",Times,serif;
 // baseline grid
-$font-size: 16; //in pixels
-$em: 1em;
-
+$font-size-in-px: 21; //in pixels
+$font-size: ($font-size-in-px / 16) * 1em; //in ems
+$line-height: 1.6111111111em; //in ems
 
 // vertical rhythm in pixels (returns pixels)
-$base: 11  ; // vertical space unit
-$space_0_5x: ($base/2) * 1px;
+$base: 24  ; // vertical space unit
+$space-0_5x: ($base/2) * 1px;
 $space: $base*1px;
-$space_1_5x: ($base * 1.5) * 1px;
-$space_2x: ($base * 2) * 1px;
-$space_3x: ($base * 3) * 1px;
-$space_4x: ($base * 4) * 1px;
+$space-1_5x: ($base * 1.5) * 1px;
+$space-2x: ($base * 2) * 1px;
+$space-2_5x: ($base * 2.5) * 1px;
+$space-3x: ($base * 3) * 1px;
+$space-4x: ($base * 4) * 1px;
 
 
-// layout grid
+// page & grid
+$page-wrapper-width: 658px;
 $grid-columns: 8;
 $grid-column-width: (100% / $grid-columns);
 $grid-gutter: 6px;
@@ -23,15 +27,22 @@ $grid-container-shim: 4px;
 // icon sprite positions
 $image-directory: '/assets/';
 $icon: -4px;
-$icon_white: -25px;
-$icon_black:-46px;
-$icon_white: -67px; 
-$icon_transparent: -88px;
-$icon_transparent:-109px;
-$icon_special:-130px;
-$icon_special2:-151px;
-$icon_special3:-172px;
+$icon-white: -25px;
+$icon-black:-46px;
+$icon-white: -67px; 
+$icon-transparent: -88px;
+$icon-transparent:-109px;
+$icon-special:-130px;
+$icon-special2:-151px;
+$icon-special3:-172px;
 
 //colors
-$background-color:#dbeffd;
+$background-color:#ffffff;
+$link-color:#2989da;
+$link-hover-color:#2989ff;
+$link-dark-color:#ffffff;
+$link-dark-hover-color:#ffffff;
+$link-light-color:#ffffff;
+$link-light-hover-color:#ffffff;
+$selection-color:rgba(73,151,214,.8);
 

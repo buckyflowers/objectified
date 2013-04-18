@@ -1,20 +1,16 @@
 ::selection {
-  background: rgba(73,151,214,.8);
+  background: $selection-color;
   color: #fff;
   text-shadow: 0 1px rgba(0,0,0,.2);
 }
 
-.fontstack{
-  font-family: "AvenirLTStd", "Avenir Next", "Helvetica Neue", Arial, sans-serif;
-}
-
 // set site wide typography on elements
 body {
-font-size: 1em;
-line-height:1.4em;
+font-size: $font-size;
+line-height:$line-height;
 @include fontstack;
 color: #111;
 -webkit-font-smoothing: antialiased;
 -webkit-text-size-adjust: none;
 }
-input, textarea {@include fontstack;font-size: 1em;}
+input, textarea {@include fontstack;font-size: $font-size;}

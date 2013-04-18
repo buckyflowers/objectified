@@ -1,0 +1,36 @@
+.heading, 
+.h1, 
+.h2, 
+.h3, 
+.h4, 
+.h5, 
+.h6 {line-height: 1.1em; @extend .element; font-weight: bold;}
+
+// 30px
+.h1 {@extend .heading; font-size: 1.875em;text-rendering: optimizeLegibility;line-height: 1.2em;}
+
+// 24px
+.h2 {@extend .heading; font-size: 1.5em;text-rendering: optimizeLegibility;line-height: 1.2em;}
+
+// 21px
+.h3 {@extend .heading; font-size: 1.3125em;text-rendering: optimizeLegibility;}
+
+// 18px
+.h4  {@extend .heading; font-size: 1.125em;text-rendering: optimizeLegibility;}
+
+// 16px
+.h5 {@extend .heading; font-size: 1em;}
+
+// 12px
+.h6 {@extend .heading; font-size: .75em;}
+
+
+// 36px
+.h--large {@extend .heading; font-size: 2.25em;text-rendering: optimizeLegibility;}
+
+// 48px
+.h--xlarge {@extend .heading; font-size: 3em;text-rendering: optimizeLegibility;}
+
+
+// start extending here
+.h5{text-transform: uppercase;}

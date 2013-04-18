@@ -1,4 +1,4 @@
-// include bourbon
+// requires bourbon
 //@import "_bourbon/_bourbon.scss";
 
 // mixins and variables
@@ -12,18 +12,18 @@
 
 // grid and page layouts
 @import "_base/_grid.scss";
-@import "_base/_page.scss";
 
 
 // base element styles, animations, typography
 @import "_base/_content.scss";
 @import "_base/_spacing.scss";
-@import "_base/_heading.scss";
 @import "_base/_typography.scss";
 @import "_base/_animation.scss";
 
 
 // modules 
+@import "_modules/_page.scss";
+@import "_modules/_heading.scss";
 @import "_modules/_alert.scss";
 @import "_modules/_box.scss";
 @import "_modules/_button.scss";
@@ -52,9 +52,6 @@
 // utilities, helpers, states, themes
 @import "_base/_themes.scss";
 @import "_base/_utilities.scss";
-
-// plugins
-@import "animate.css"
 
 
 // TODO

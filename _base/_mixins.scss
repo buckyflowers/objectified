@@ -1,6 +1,5 @@
-
 @mixin fontstack{
-  font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: $font-family;
   text-rendering: optimizeLegibility;
 }
 
