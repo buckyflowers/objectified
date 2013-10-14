@@ -1,49 +1,57 @@
 
 // text colors
-.text_color_1 {color: #dae2ec; &:hover{color:#555;}}
-.text_color_2 {color: #555; &:hover{color:#888;}}
-.text_color_3 {color: #777; &:hover{color:#aaa;}}
-.text_color_4 {color: #aaa; &:hover{color:#ccc;}}
-.text_color_5 {color: #ccc; &:hover{color:#eee;}}
-.text_color_6 {color: #eee; &:hover{color:#fff;}}
-.text_color_7 {color: #fff; &:hover{color:#eee;}}
+.text-color-1 {color: #dae2ec; &:hover{color:#555;}}
+.text-color-2 {color: #555; &:hover{color:#888;}}
+.text-color-3 {color: #777; &:hover{color:#aaa;}}
+.text-color-4 {color: #aaa; &:hover{color:#ccc;}}
+.text-color-5 {color: #ccc; &:hover{color:#eee;}}
+.text-color-6 {color: #eee; &:hover{color:#fff;}}
+.text-color-7 {color: #fff; &:hover{color:#eee;}}
 
-.text_error {color: #C42424;}
-.text_success {color: #556F30;}
+.text-error {color: #C42424;}
+.text-success {color: #556F30;}
 
 // Background Colors
 // Some explantion for some of the psuedo classes in here, if the background is dark,
 // we want to change inputs, and buttons border color to not look fuzzy.
-// That's why you see those declarations like at the end of .bg_2
+// That's why you see those declarations like at the end of .bg-2
 
-// Light grey for buttons
-.bg_1 {
-  background-color: #3c7fb3;
+// blue
+@mixin bg-1 {
+  background-color: #558ee3;
+  @include background(linear-gradient(61deg, rgba(85, 142, 227, 1) 0%, rgba(105, 85, 227,1) 100%));
   color: #fff;
   border-color: #3c7fb3;
-  &.button:hover { background-color: #286492; color: #fff; }
-  &.button:active { background-color: #286492; }
+}
+.bg-1 {
+  @include bg-1;
 }
 
-// light grey
-.bg_2 {
+// darkest grey (black)
+@mixin bg-2 {
   color:#fff;
-  background-color: #e0e0e0;
+  background-color: #222222;
   &.button:hover { background-color: #e0e0e0; color: #fff; }
   &.button:active { background-color: #e0e0e0; }
 }
-
-// darker green 
-.bg_3 {
-  background-color: #35ae68;
-  color: #fff;
-  border-color: #35ae68;
-  &.button:hover {color: #fff; background-color:#35ae68;}
-  &.button:active { background-color: #35ae68; }
+.bg-2 {
+  @include bg-2;
 }
 
+// darkest grey transparent (black)
+@mixin bg-3 {
+  color:#fff;
+  background-color: rgba(0,0,0,.5);
+  &.button:hover { background-color: #e0e0e0; color: #fff; }
+  &.button:active { background-color: #e0e0e0; }
+}
+.bg-3 {
+  @include bg-3;
+}
+
+
 // white
-.bg_5 {
+.bg-5 {
   color: #2a6b9d;
   background: #fff;
   border-color: #fff;
@@ -52,7 +60,7 @@
 }
 
 // transparent grey button
-.bg_6 {
+.bg-6 {
   color:rgba(255,255,255,1);
   background: rgba(45,43,40,.4);
   &.button:hover {color:rgba(255,255,255,1); background: rgba(45,43,40,.4);}
@@ -60,40 +68,40 @@
 }
 
 // dark grey for main tabs
-.bg_7 {
+.bg-7 {
   color: #fff;
   background: #282424;
   border-color: #282424;
   &.button:hover {color:#fff; background: #282424;}
   &.button:active {color:#fff; background: #151313;}
 }
-.bg_7_active {color:#fff; background: #151313;}
+.bg-7-active {color:#fff; background: #151313;}
 
 // darker orange
-.bg_8 {
+.bg-8 {
   color: #fff;
   background: #286492;
   border-color: #286492;
   &.button:hover {color:#fff; background: #286492;}
   &.button:active {color:#fff; background: #286492; }
 }
-.bg_8_active {
+.bg-8-active {
   background: #286492;
   border-color: #286492;
 }
 
-.bg_9 {
+.bg-9 {
   color: #666;
   background: #ddd;
   border-color: #ddd;
   &.button:hover {color:#666; background: #ddd;}
   &.button:active {color:#666; background: #ccc;}
 }
-.bg_9_active {color:#666; background: #ccc;}
+.bg-9-active {color:#666; background: #ccc;}
 
 
 // transparent button
-.bg_10 {
+.bg-10 {
   color: rgba(255,255,255,1);
   background: rgba(0,0,0,.3);
   border-color: rgba(0,0,0,.3);
@@ -102,7 +110,7 @@
 }
 
 // blue
-.bg_11 {
+.bg-11 {
   color: rgba(255,255,255,1);
   background: rgba(53,113,174,1);
   border-color: rgba(53,113,174,1);
@@ -112,7 +120,7 @@
 
 
 // red
-.bg_12 {
+.bg-12 {
   color: #fff;
   background: #ae3535;
   border-color: #ae3535;

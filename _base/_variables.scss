@@ -1,12 +1,13 @@
 // type
-$font-family: "ff-tisa-web-pro",Georgia,Cambria,"Times New Roman",Times,serif;
+$font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 // baseline grid
-$font-size-in-px: 21; //in pixels
-$font-size: ($font-size-in-px / 16) * 1em; //in ems
+$font-size: 18; //in ems
+$font-size-in-px: $font-size * 1px; //in pixels
+$font-size-in-em: ($font-size / 16) * 1em; //in ems
 $line-height: 1.6111111111em; //in ems
 
 // vertical rhythm in pixels (returns pixels)
-$base: 24  ; // vertical space unit
+$base: 12  ; // vertical space unit
 $space-0_5x: ($base/2) * 1px;
 $space: $base*1px;
 $space-1_5x: ($base * 1.5) * 1px;
@@ -17,10 +18,10 @@ $space-4x: ($base * 4) * 1px;
 
 
 // page & grid
-$page-wrapper-width: 658px;
+$page-wrapper-width: 768px;
 $grid-columns: 8;
 $grid-column-width: (100% / $grid-columns);
-$grid-gutter: 6px;
+$grid-gutter: 24px;
 $grid-container-shim: 4px;
 
 
@@ -38,11 +39,18 @@ $icon-special3:-172px;
 
 //colors
 $background-color:#ffffff;
-$link-color:#2989da;
-$link-hover-color:#2989ff;
+$link-color:#ffffff;
+$link-hover-color:rgba(255,255,255,.5);
 $link-dark-color:#ffffff;
 $link-dark-hover-color:#ffffff;
 $link-light-color:#ffffff;
-$link-light-hover-color:#ffffff;
+$link-light-hover-color: rgba(255,255,255,.50);
 $selection-color:rgba(73,151,214,.8);
 
+$text-color: rgba(255,255,255,1);
+$text-color-de-emphasized: rgba(255,255,255,.50);
+$text-color-emphasized: rgba(255,255,255,1);
+
+$inverted-text-color: rgba(0,0,0,.87);
+$inverted-text-color-de-emphasized:  rgba(0,0,0,.44);
+$inverted-text-color-emphasized:  rgba(0,0,0,.87);

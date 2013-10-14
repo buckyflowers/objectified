@@ -1,7 +1,5 @@
 // document
-html {background-color: $background-color;}
-
-
+html, body { height: 100%;}
 // text
 // html elements are not styled by default, put .is-formatted 
 // to a wrapper to get these styles. or use the individual helpers 
@@ -77,6 +75,10 @@ a {
   &:hover {color: $link-dark-hover-color;}
 }
 
+// text
+.text-demphasized {
+  color:$text-color-de-emphasized;
+}
 
 // divider
 .divider {

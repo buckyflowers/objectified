@@ -1,41 +1,121 @@
-// page
+.page {
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  width: 100%;
+  z-index: 2;
+  position: absolute;
+  overflow: auto;
+}
 
-.page {}
+.page--quiz {
+  @extend .page;
+  .page-body{
+    padding:106px 24px 112px;
+  }
+}
 
-.page-wrapper {
-  width: $page-wrapper-width; 
-  margin: 0 auto; 
-  @include clearfix;
+.page-bg{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+
+}
+
+.page-bg--image {
+  @extend .page-bg;
+  @include background-size(cover);
+  background-position: center;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-repeat: repeat-x;
+    @include background-image(linear-gradient(bottom,rgba(0,0,0,0.5) 0,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%));
+  }
+}
+
+.page-bg--blue {
+  @extend .page-bg;
+  @include bg-1;
+}
+
+.page-header {
+  @include bg-3;
+  height: 44px;
+  position: relative;
+  box-shadow: 0 2px 0 0 rgba(255,255,255,.15);
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
 }
 
 .page-body{
-  @include clearfix;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top:0;
 }
 
-.page-sidebar{
-  float:left;
-  width: 25%;
+
+.page-footer {
+  @include bg-3;
+  bottom: 0;
+  box-shadow: 0 -2px 0 0 rgba(255,255,255,.15);
+  height: 88px;
+  line-height: 88px;
+  left: 0;
+  padding: 0 24px;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  .nav-button{
+    top: 50%;
+    margin-top: -16px;
+  }
 }
 
-.page-main{
-  @include clearfix;
-  display:table-cell;
-  *display:block;
-  width:auto;
-  @include box-sizing(border-box);
+
+.page-sidebars{
+  position: absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
 }
 
-.page-main:after{clear:both;display:block;visibility:hidden;overflow:hidden;height:0 !important;line-height:0;font-size:xx-large;content:" x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x ";}
-
-
-// custom css
-.page-header{
-  height: 100px;
-}
-.page-sidebar{
-  width: 16%;
+.page-sidebar {
+  position: absolute;
+  height: 100%;
+  width: 372px;
+  top:0;
+  bottom: 0;
+  overflow:scroll;
 }
 
-.page-logo img{
-  width:100%;
+.page-sidebar--right {
+  @extend .page-sidebar;
+  right: 0;
+  left: auto;
+}
+
+.page-sidebar--left {
+  @extend .page-sidebar;
+  left: 0;
+  right: auto;
+}
+
+.snapjs-right .page-sidebar--left,
+.snapjs-left .page-sidebar--right {
+    display: none;
 }

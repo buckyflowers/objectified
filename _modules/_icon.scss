@@ -5,77 +5,72 @@
   width: 20px;
   height: 20px;
   margin-top: -4px;
-  background-image: image-url('no-repeat.png');
+  background-image: url('no-repeat.png');
   background-repeat: no-repeat;
   vertical-align: middle;
 }
 
+.icon-large {
+  @extend .icon;
+  margin-top: 0;
+  width: 46px;
+  height: 46px;
+}
+
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
   .icon {
-    background-image: image-url('no-repeat-2x.png');
-    background-size: 160px 320px;
+    background-image: url('no-repeat-2x.png');
+    background-size: 200px 566px;
   }
 }
 
-.icon_fl {
+.icon-fl {
   display: block;
   float: left;
 }
 
-.icon_fr {
+.icon-fr {
   display: block;
   float: left;
 }
 
-.icon_inline {
+.icon-inline {
   margin-top: -2px;
 }
 
-.icon_no-text {
+.icon-no-text {
   margin-right: 0;
   text-indent: -10000px;
 }
 
-.icon_search { background-position: 0 0; }
-.icon_search_white { background-position: -20px 0; }
-.icon_search_special { background-position: -40px 0; }
+.icon-logo {@extend .icon; background-position: -80px 0; width:25px; height:25px; }
+.icon-logo-black {@extend .icon;  background-position: -100px 0; width:25px;  height:25px;}
+.icon-logo-black-transparent {@extend .icon;  background-position: -120px 0; width:25px;  height:25px;}
 
-.icon_notes { background-position: 0 -20px; }
-.icon_notes_white { background-position: -20px -20px; }
-.icon_notes_special { background-position: -40px -20px; }
+.icon-lmenu {@extend .icon;  background-position: 0 0; }
+.icon-lmenu-black {@extend .icon;  background-position: -20px 0; }
+.icon-lmenu-black-transparent {@extend .icon;  background-position: -40px 0; }
 
-.icon_create { background-position: 0 -40px; }
-.icon_create_white { background-position: -20px -40px; }
-.icon_create_special { background-position: -40px -40px; }
+.icon-menu {@extend .icon;  background-position: 0 -20px; }
+.icon-menu-black {@extend .icon;  background-position: -20px -20px; }
+.icon-menu-black-transparent {@extend .icon;  background-position: -40px -20px; }
 
-.icon_friends { background-position: 0 -60px; width: 26px; }
-.icon_friends_white { background-position: -28px -60px; width: 26px; }
-.icon_friends_special { background-position: -55px -60px; width: 26px; }
+.icon-close {@extend .icon;  background-position: 0 -40px; }
+.icon-close-black {@extend .icon;  background-position: -20px -40px; }
+.icon-close-black-transparent {@extend .icon;  background-position: -40px -40px; }
 
-.icon_gear { background-position: 0 -80px; }
-.icon_gear_white { background-position: -20px -80px; }
-.icon_gear_special { background-position: -40px -80px; }
+.icon-down {@extend .icon;  background-position: 0 -60px; }
+.icon-down-black {@extend .icon;  background-position: -20px -60px; }
+.icon-down-black-transparent {@extend .icon;  background-position: -40px -60px; }
 
-.icon_check { background-position: 0 -100px; margin-top: -6px;}
-.icon_check_white { background-position: -20px -100px; margin-top: -6px;}
-.icon_check_special { background-position: -40px -100px; margin-top: -6px;}
+.icon-previous-large{@extend .icon-large;  background-position: 0 -280px; }
+.icon-previous-large-black{@extend .icon-large;  background-position: -60px -280px; }
+.icon-previous-large-black-transparent{@extend .icon-large;  background-position: -120px -280px; }
 
-.icon_tag { background-position: 0 -120px; margin-top: -4px;}
-.icon_tag_white { background-position: -20px -120px; margin-top: -4px;}
-.icon_tag_special { background-position: -40px -120px; margin-top: -4px;}
+.icon-next-large{@extend .icon-large;  background-position: 0 -220px; }
+.icon-next-large-black{@extend .icon-large;  background-position: -60px -220px; }
+.icon-next-large-black-transparent{@extend .icon-large;  background-position: -120px -220px; }
 
-.icon_action { background-position: 0 -140px; margin-top: -4px; width: 22px;}
-.icon_action_white { background-position: -20px -140px; margin-top: -4px; width: 22px;}
-.icon_action_special { background-position: -40px -140px; margin-top: -4px; width: 22px;}
+.icon-correct-large{@extend .icon-large;  background-position: 0 -340px; }
+.icon-incorrect-large{@extend .icon-large;  background-position: -60px -340px; }
 
-.icon_avatar {
-  width: 16px;
-  height: 16px;
-}
-
-.icon_medium {
-  &.icon_avatar {
-    width: 44px;
-    height: 44px;
-  }
-}

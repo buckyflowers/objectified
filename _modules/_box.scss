@@ -13,7 +13,7 @@ Box (.box) Good for modules that have a header and body and possibly footer
 .box__body{padding:$space;@extend .clearfix;}
 .box__footer{
   padding:$space;
-  @extend .bg_7;
+  @extend .bg-7;
   @extend .clearfix;
 }
 
@@ -25,7 +25,7 @@ Box (.box) Good for modules that have a header and body and possibly footer
 
 .box_green{
   height: 470px;
-  @extend .bg_3;
+  @extend .bg-3;
   @extend .box_rounded;
 }
 .box_transparent {

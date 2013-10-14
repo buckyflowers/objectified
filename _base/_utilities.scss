@@ -85,6 +85,8 @@
 .text-transform-lower{text-transform:lowercase}
 .text-transform-normal{text-transform:none}
 
+.text-invert{color:#ffffff;}
+
 .line-height-small {line-height: 1em}
 .line-height-medium {line-height: 1.4em}
 .line-height-large {line-height: 2em}
@@ -229,6 +231,17 @@
   -moz-user-select: auto;
   -ms-user-select: auto;
   user-select: auto;
+}
+
+.scrollable{
+    overflow: auto;
+    -webkit-transition-property: top, bottom;
+    transition-property: top, bottom;
+    -webkit-transition-duration: .2s, .2s;
+    transition-duration: .2s, .2s;
+    -webkit-transition-timing-function: linear, linear;
+    transition-timing-function: linear, linear;
+    -webkit-overflow-scrolling: touch;
 }
 
 

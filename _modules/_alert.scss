@@ -19,7 +19,7 @@
     display: block;
   }
   // default skin
-  @extend .bg_flat;
+  @extend .bg-flat;
   border: 1px solid #dae2ec;
   border-bottom-color: #000;
   background: #333;
@@ -38,21 +38,21 @@
 
 .alert_success, .alert_positive {
   @extend .alert;
-  @extend .bg_3;
+  @extend .bg-3;
 }
 .alert_error, .alert_negative {
   @extend .alert;
-  @extend .bg_12;
-  .button { @extend .bg_11__item;}
+  @extend .bg-12;
+  .button { @extend .bg-11__item;}
 }
 .alert_notice {
   @extend .alert;
-  @extend .bg_11;
-  .button { @extend .bg_3__item;}
+  @extend .bg-11;
+  .button { @extend .bg-3__item;}
 }
 .alert_tip{
   @extend .alert;
-  @extend .bg_11;
+  @extend .bg-11;
 }
 
 
